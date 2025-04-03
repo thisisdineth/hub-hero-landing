@@ -16,12 +16,413 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ictlearninghub" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <div class="logo-icon">ICT</div>
+          <span class="logo-text">Learning Hub</span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="nav-links">
+          <a href="#" class="nav-link active">Home</a>
+          <a href="#courses" class="nav-link">Courses</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-button">
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button class="mobile-menu-button" id="mobileMenuButton">
+          <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#courses" class="nav-link">Courses</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="animated-background">
+          <div class="bg-circle bg-circle-1"></div>
+          <div class="bg-circle bg-circle-2"></div>
+          <div class="bg-circle bg-circle-3"></div>
+          
+          <!-- Tech symbols -->
+          <div class="tech-icon tech-icon-1"><i class="fa-solid fa-code"></i></div>
+          <div class="tech-icon tech-icon-2"><i class="fa-solid fa-terminal"></i></div>
+          <div class="tech-icon tech-icon-3"><i class="fa-solid fa-database"></i></div>
+          <div class="tech-icon tech-icon-4"><i class="fa-solid fa-microchip"></i></div>
+          <div class="tech-icon tech-icon-5"><i class="fa-solid fa-wifi"></i></div>
+          <div class="tech-icon tech-icon-6"><i class="fa-solid fa-globe"></i></div>
+          <div class="tech-icon tech-icon-7"><i class="fa-solid fa-server"></i></div>
+          <div class="tech-icon tech-icon-8"><i class="fa-solid fa-cloud"></i></div>
+        </div>
+
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Discover the Future of 
+              <span class="gradient-text">ICT Learning</span>
+            </h1>
+            <p class="hero-subtitle">
+              Master cutting-edge technology skills with our interactive courses, 
+              expert instructors, and hands-on learning experiences.
+            </p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary">Explore Courses</button>
+              <button class="btn btn-outline">Learn More</button>
+            </div>
+          </div>
+
+          <!-- Hero visual element -->
+          <div class="hero-visual">
+            <div class="dashboard-preview">
+              <div class="dashboard-header">
+                <div class="window-controls">
+                  <div class="control red"></div>
+                  <div class="control yellow"></div>
+                  <div class="control green"></div>
+                  <div class="window-title">ICT Learning Hub - Interactive Dashboard</div>
+                </div>
+              </div>
+              <div class="dashboard-content">
+                <div class="course-card">
+                  <i class="fa-solid fa-desktop"></i>
+                  <h3>Web Development</h3>
+                  <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="course-card">
+                  <i class="fa-solid fa-database"></i>
+                  <h3>Database Management</h3>
+                  <p>SQL, MongoDB</p>
+                </div>
+                <div class="course-card">
+                  <i class="fa-solid fa-server"></i>
+                  <h3>Networking</h3>
+                  <p>TCP/IP, Security</p>
+                </div>
+                <div class="course-card">
+                  <i class="fa-solid fa-cloud"></i>
+                  <h3>Cloud Computing</h3>
+                  <p>AWS, Azure</p>
+                </div>
+                <div class="course-card">
+                  <i class="fa-solid fa-code"></i>
+                  <h3>Programming</h3>
+                  <p>Python, Java</p>
+                </div>
+                <div class="course-card">
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  <h3>Mobile Development</h3>
+                  <p>Android, iOS</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Decorative elements -->
+            <div class="decorative-circle decorative-circle-1"></div>
+            <div class="decorative-circle decorative-circle-2"></div>
+          </div>
+
+          <!-- Stats section -->
+          <div class="stats-section">
+            <div class="stat-item">
+              <h3>50+</h3>
+              <p>Courses</p>
+            </div>
+            <div class="stat-item">
+              <h3>30k+</h3>
+              <p>Students</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Satisfaction</p>
+            </div>
+            <div class="stat-item">
+              <h3>24/7</h3>
+              <p>Support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="faq-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Get answers to common questions about our courses, teaching methodology, and student support services.
+            </p>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span>What courses are offered at the ICT Learning Hub?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content">
+                <p>Our Learning Hub offers a wide range of ICT courses including Web Development, Database Management, Networking, Cloud Computing, Programming, Mobile App Development, Cybersecurity, and Data Science. Each course is designed to provide both theoretical knowledge and practical skills.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span>Are there prerequisites for enrolling in courses?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content">
+                <p>Prerequisites vary by course. Entry-level courses typically don't require prior knowledge, while advanced courses may need some basic understanding of related concepts. Each course page clearly mentions any prerequisites needed. We also offer foundation courses to help build necessary skills.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span>How are the courses delivered?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content">
+                <p>Our courses are delivered through a blend of interactive video lectures, live webinars, hands-on projects, coding exercises, and peer collaboration. Our learning platform provides access to course materials, quizzes, assignments, and community forums where you can interact with instructors and fellow learners.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span>Do you offer certifications upon course completion?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content">
+                <p>Yes, upon successful completion of a course, you'll receive an industry-recognized certification from ICT Learning Hub. Many of our advanced courses also prepare you for global certifications like CompTIA, Cisco, AWS, Microsoft, and Google certifications.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span>Can I access course materials after completion?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content">
+                <p>Absolutely! Once enrolled, you'll have lifetime access to the course materials, including any future updates. This allows you to revisit concepts, stay current with evolving technologies, and continue your learning journey at your own pace.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <span>Is there job placement assistance available?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content">
+                <p>Yes, we offer career services including resume building, interview preparation, and connections with industry partners. Our Career Development Center provides guidance on job searches, and we regularly host virtual job fairs and networking events with potential employers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>
+              Have questions about our courses or need more information? Fill out the form below and our team will get back to you shortly.
+            </p>
+          </div>
+
+          <div class="contact-container">
+            <div class="contact-form">
+              <h3>Send us a message</h3>
+              <form id="contactForm">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="Course Inquiry" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+              </form>
+            </div>
+
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              
+              <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <h4>Our Location</h4>
+                  <p>
+                    123 Tech Campus, Digital Avenue
+                    <br>
+                    Silicon Valley, CA 94043
+                  </p>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <h4>Phone Number</h4>
+                  <p>+1 (123) 456-7890</p>
+                  <p>+1 (987) 654-3210</p>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <h4>Email Address</h4>
+                  <p>info@ictlearninghub.com</p>
+                  <p>support@ictlearninghub.com</p>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                  <h4>Working Hours</h4>
+                  <p>Monday - Friday: 9am - 6pm</p>
+                  <p>Saturday: 10am - 4pm</p>
+                </div>
+              </div>
+              
+              <div class="social-links">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                  <a href="#" class="social-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <div class="logo-icon">ICT</div>
+              <span class="logo-text">Learning Hub</span>
+            </div>
+            <p class="footer-description">
+              Empowering the next generation of tech professionals with cutting-edge ICT education and training.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+              <li><a href="#courses"><i class="fa-solid fa-chevron-right"></i> Courses</a></li>
+              <li><a href="#features"><i class="fa-solid fa-chevron-right"></i> Features</a></li>
+              <li><a href="#faq"><i class="fa-solid fa-chevron-right"></i> FAQ</a></li>
+              <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Our Courses</h3>
+            <ul class="footer-links">
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Web Development</a></li>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Database Management</a></li>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Networking</a></li>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Cloud Computing</a></li>
+              <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Mobile Development</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Newsletter</h3>
+            <p class="footer-description">
+              Subscribe to our newsletter for the latest updates on courses, events, and tech news.
+            </p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="newsletter-input"
+              />
+              <button
+                type="submit"
+                class="btn btn-primary newsletter-button"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>© 2025 ICT Learning Hub. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast">
+      <div class="toast-content">
+        <span class="toast-title">Message sent!</span>
+        <span class="toast-message">We'll get back to you as soon as possible.</span>
+      </div>
+      <button class="toast-close" id="toastClose">&times;</button>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
